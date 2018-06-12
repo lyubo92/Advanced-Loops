@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class evenNumber {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int num = 0;
+        while (true) {
+            System.out.println("Enter even number: ");
+           int n = Integer.parseInt(scanner.nextLine());
+            if (n % 2 == 0) {
+                num = n;
+                break;
+            }
+            System.out.println("The number is not even.");
+        }
+        System.out.println("Even number entered: " + num);
+    }
+}
